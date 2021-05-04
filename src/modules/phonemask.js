@@ -14,7 +14,7 @@ export default class Mask {
 	//Inserir padrão, parênteses e hífen (telefone fixo)
 	mask() {
 		this.input.addEventListener('input', e => {
-			isNaN(e.data) || e.data === null ? this.input.value = this.input.value.slice(0, -1) : false;
+			isNaN(e.data) || e.data === null || e.data === ' ' ? this.input.value = this.input.value.slice(0, -1) : false;
 			
 			let numberSize = this.input.value.length;
 			if(numberSize <= 13) this.input.pattern = '[(]{1}[0-9]{2}[)]{1}[0-9]{4}[-]{1}[0-9]{4}';
