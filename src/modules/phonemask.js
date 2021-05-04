@@ -20,7 +20,7 @@ export default class Mask {
 			if(numberSize <= 13) this.input.pattern = '[(]{1}[0-9]{2}[)]{1}[0-9]{4}[-]{1}[0-9]{4}';
 			if(numberSize === 1) this.input.value = `(${this.input.value}`;
 			if(numberSize === 3) this.input.value += ')';
-			if(numberSize === 8) this.input.value += '-';
+			if(numberSize === 8 || numberSize === 9 && this.input.value[8] !== '-') this.input.value += '-';
 			if(numberSize === 14) this._mobileNumber();//Número extra - telefone móvel
 		})
 	}
