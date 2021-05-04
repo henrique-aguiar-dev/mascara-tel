@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Phone Mask</title>
+	<link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+
+	<section class="container">
+		<h1>Telefone para contato</h1>
+		<form method="POST">
+			<input type="tel" id="input-tel" maxlength="14" minlength="13" placeholder="(__)____-____" required title="Deve digitar apenas números.">
+			<label for="input-tel">*Somente números</label>
+			<input type="submit" id="btn-send" value="Enviar">
+			<p>
+				<!--conteúdo dinâmico - Resultado-->
+			</p>
+		</form>
+	</section>
+
+	<script src="assets/js/bundle.js"></script>
+
+</body>
+
+</html>
