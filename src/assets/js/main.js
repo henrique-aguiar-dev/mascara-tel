@@ -18,6 +18,8 @@ const loadForm = () => {
 
 	document.querySelector('form').addEventListener('submit', e => showMsg(e));
 
+	inputTel.addEventListener('paste', event => event.preventDefault());
+
 	loadMask();
 	
 }//loadForm
