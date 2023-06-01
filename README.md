@@ -8,7 +8,7 @@ Permite digitar apenas números e adiciona automaticamente os parênteses e híf
 
 Feito para funcionar em desktop e mobile;
 
-Demonstração https://apilogik.github.io/mascara-tel/
+Demonstração https://henrique-aguiar-dev.github.io/mascara-tel/
 
 ----------Instruções-------------
 
